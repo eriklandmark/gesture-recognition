@@ -7,7 +7,7 @@ import lib
 
 DATASET_PATH = "D:/Datasets/20bn-jester/extracted"
 # LABELS_PATH = "D:/Datasets/20bn-jester/jester-v1-labels.csv"
-LABELS_PATH = os.path.join(os.getcwd(), "labels.txt")
+LABELS_PATH = os.path.join(os.getcwd(), "test_material/labels.txt")
 TRAIN_LIST_PATH = "D:/Datasets/20bn-jester/jester-v1-train.csv"
 
 
