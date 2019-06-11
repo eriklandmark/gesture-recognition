@@ -27,6 +27,6 @@ with tf.Session() as sess:
         score = np.argmax(scores[0])
         print(labels[score], score)
 
-    time = timeit.timeit(predict_func, number=10)
+    time = timeit.timeit(predict_func, number=100)
     print(time)
 

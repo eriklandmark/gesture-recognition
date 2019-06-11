@@ -21,7 +21,7 @@ model.summary()
 print("Starting Training")
 data_ids = generators.get_data_ids_from_file(TRAIN_LIST_PATH)[:TOTAL_EXAMPLES]
 labels = generators.get_labels()
-train_generator = generators.DataGenerator(data_ids, labels, **{'batch_size': BATCH_SIZE})
+train_generator = generators.DataGeneratorV1(data_ids, labels, **{'batch_size': BATCH_SIZE})
 
 model.fit_generator(train_generator, steps_per_epoch=int(TOTAL_EXAMPLES / BATCH_SIZE), epochs=EPOCHS, verbose=1,
                     max_queue_size=10, workers=4, use_multiprocessing=False, callbacks=[
